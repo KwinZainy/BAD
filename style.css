@@ -15,3 +15,22 @@ main{
 main img{
     width: 200px;
 }
+
+.main-container{
+    display: flex;
+    justify-content: space-around ;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container p{
+    margin-top: 50px;
+}
+
+.main-container button{
+    width: 100px;
+    margin: auto;
+}
