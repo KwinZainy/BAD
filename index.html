@@ -14,15 +14,18 @@
 
             <div class="row">
                 <img src="./assets/bag1.webp" alt="">
-                <button id="bagBtn">Add To Cart</button>
+                <p>Bag</p>
+                <button id="bagBtn" onclick="addToCart('Bag')">Add To Cart</button>
             </div>
             <div class="row">
                 <img src="./assets/food.jpeg" alt="">
-                <button id="foodBtn">Add To Cart</button>
+                <p>Food</p>
+                <button id="foodBtn" onclick="addToCart('Food')">Add To Cart</button>
             </div>
             <div class="row">
                 <img src="./assets/phone.jpeg" alt="">
-                <button id="phoneBtn">Add To Cart</button>
+                <p>Phone</p>
+                <button id="phoneBtn" onclick="addToCart('Phone')">Add To Cart</button>
             </div>
             
         </main>
@@ -31,7 +34,8 @@
         <div class="cart-display">
             <p>ITEMS IN CART (<span id="cartNumber">0</span>)</p>
 
-
+            <div id="cartDisplay"></div>
+            
         </div>
 
 
