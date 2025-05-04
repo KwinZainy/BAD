@@ -52,15 +52,17 @@ nav {
     color: tomato;
 }
 
-.nav-cart a, .nav-cart-2 a {
+.nav-cart p, .nav-cart-2 p {
     background-color: tomato;
     padding: 7px 12px;
     border-radius: 10px;
     transition: all .3s ease-in-out;
     font-weight: 600;
+    color: white;
+    cursor: pointer;
 }
 
-.nav-cart a:hover, .nav-cart-2 a:hover {
+.nav-cart p:hover, .nav-cart-2 p:hover {
     color: tomato;
     background-color: #fff;
 }
@@ -147,11 +149,6 @@ nav {
         margin: 4rem 0;
     }
 
-    shop item
-
-    .items {
-    
-    }
     
     .img-container {
         width: 220px;
