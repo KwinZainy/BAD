@@ -9,7 +9,6 @@ function addToCart(value){
     let counter = cartNumber.innerText
     counter++
     console.log(counter);
-    
     cartNumber.innerText = counter
     cartDisplay.innerHTML += `<p>${value}</p>`
 }
