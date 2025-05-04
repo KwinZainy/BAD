@@ -52,12 +52,13 @@ nav {
     color: tomato;
 }
 
-.nav-cart a, .nav-cart-2 a {
-    background-color: tomato;
+.nav-cart p, .nav-cart-2 p {
+    /* background-color: tomato;
     padding: 7px 12px;
     border-radius: 10px;
     transition: all .3s ease-in-out;
-    font-weight: 600;
+    font-weight: 600; */
+    color: white;
 }
 
 .nav-cart a:hover, .nav-cart-2 a:hover {

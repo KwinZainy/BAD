@@ -1,6 +1,6 @@
-const bagBtn = document.getElementById("bagBtn")
-const foodBtn = document.getElementById("foodBtn")
-const phoneBtn = document.getElementById("phoneBtn")
+// const bagBtn = document.getElementById("product-1")
+// const foodBtn = document.getElementById("foodBtn")
+// const phoneBtn = document.getElementById("phoneBtn")
 const cartNumber = document.getElementById("cartNumber")
 const cartDisplay = document.getElementById("cartDisplay")
 
