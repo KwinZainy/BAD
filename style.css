@@ -82,6 +82,7 @@ nav {
 
 .items-container {
     background-color: rgba(24, 24, 24, 0.664);
+    display: flex;
 }
 
 .items {
