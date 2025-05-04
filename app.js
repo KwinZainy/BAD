@@ -1,6 +1,6 @@
 
 const cartNumber = document.getElementById("cartNumber")
-const cartItems = document.getElementById("cartItems")
+const display = document.getElementById("cartItems")
 
 
 let cartArray = [];
@@ -14,9 +14,24 @@ function addToCart(value){
     console.log(counter);
     cartNumber.innerText = counter
     cartArray.push(value)
+   
+    
+    
+    display.innerText = ""
+    cartArray.forEach((element)=>{
+            
+             display.innerHTML += `<p> ${element} </p>`
+    })
+
+  
+   
 
     console.log(cartArray);
     
 }
 
 
+
+function displayCart(){
+    display.classList.toggle("cart-display")
+}
