@@ -1,8 +1,11 @@
-// const bagBtn = document.getElementById("product-1")
-// const foodBtn = document.getElementById("foodBtn")
-// const phoneBtn = document.getElementById("phoneBtn")
+
 const cartNumber = document.getElementById("cartNumber")
-// const cartDisplay = document.getElementById("cartDisplay")
+const cartItems = document.getElementById("cartItems")
+
+
+let cartArray = [];
+
+
 
 
 function addToCart(value){
@@ -10,11 +13,10 @@ function addToCart(value){
     counter++
     console.log(counter);
     cartNumber.innerText = counter
-    // cartDisplay.innerHTML += `<p>${value}</p>`
+    cartArray.push(value)
+
+    console.log(cartArray);
+    
 }
 
 
-
-// bagBtn.addEventListener("click", addToCart)
-// phoneBtn.addEventListener("click", addToCart)
-// foodBtn.addEventListener("click", addToCart)
