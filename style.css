@@ -17,7 +17,7 @@ a {
 /* nav bar */
 
 nav {
-    background-color: rgba(24, 24, 24, 0.664);
+    background-color: #103B10;
 }
 
 .navbar {
@@ -52,7 +52,7 @@ nav {
     color: tomato;
 }
 
-.nav-cart p, .nav-cart-2 p {
+.nav-cart a, .nav-cart-2 a {
     background-color: tomato;
     padding: 7px 12px;
     border-radius: 10px;
@@ -62,7 +62,7 @@ nav {
     cursor: pointer;
 }
 
-.nav-cart p:hover, .nav-cart-2 p:hover {
+.nav-cart a:hover, .nav-cart-2 a:hover {
     color: tomato;
     background-color: #fff;
 }
@@ -81,8 +81,8 @@ nav {
 /* shop items */
 
 .items-container {
-    background-color: rgba(24, 24, 24, 0.664);
-    display: flex;
+    background-color: #103B10;
+
 }
 
 .items {
@@ -129,10 +129,24 @@ nav {
     }
 }
 
+.container {
+    position: relative;
+    /* background-color: green; */
+}
+
+
 .order-items{
-    border: 2px solid red;
-    width: 300px;
-    height: auto;
+    position: absolute;
+    /* position: sticky; */
+    top: 100px;
+    left: 35%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 10px 10px 10px black;
+    width: 500px;
+    height: 400px;
+    overflow-y: auto;
     display: none;
 }
 

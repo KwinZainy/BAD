@@ -33,3 +33,7 @@ function addToCart(value){
 function displayCart(){
     display.classList.toggle("cart-display")
 }
+
+
+display.addEventListener("click", addToCart)
+console.log(display)
