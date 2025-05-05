@@ -20,11 +20,12 @@ function addToCart(value){
     cartArray.forEach((element)=>{
             
             display.innerHTML += `<p> ${element} </p>`
+            // console.log(element)
     })
 
 
 
-    console.log(cartArray);
+    // console.log(cartArray);
     
 }
 
@@ -33,3 +34,7 @@ function addToCart(value){
 function displayCart(){
     display.classList.toggle("cart-display")
 }
+
+
+
+
