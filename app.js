@@ -14,17 +14,15 @@ function addToCart(value){
     console.log(counter);
     cartNumber.innerText = counter
     cartArray.push(value)
-   
     
     
     display.innerText = ""
     cartArray.forEach((element)=>{
             
-             display.innerHTML += `<p> ${element} </p>`
+            display.innerHTML += `<p> ${element} </p>`
     })
 
-  
-   
+
 
     console.log(cartArray);
     

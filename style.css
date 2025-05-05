@@ -104,11 +104,11 @@ nav {
     height: 210px;
 
 
-
     img {
         width: 100%;
         height: 80%;
         object-fit: cover;
+        border-top-right-radius: 20px;
     }
 
     button {
@@ -120,6 +120,7 @@ nav {
         padding: 10px 0;
         font-weight: 600;
         transition: all .3s ease-in-out;
+        border-bottom-left-radius: 20px;
     }
 
     button:hover {
@@ -129,7 +130,6 @@ nav {
 }
 
 .order-items{
-  
     border: 2px solid red;
     width: 300px;
     height: auto;
@@ -166,6 +166,7 @@ nav {
     .img-container {
         width: 220px;
         height: 150px;
+        margin-bottom: 40px;
     
         img {
             width: 100%;
