@@ -53,7 +53,7 @@ nav {
 }
 
 .nav-cart a, .nav-cart-2 a {
-    background-color: tomato;
+    background-color: black;
     padding: 7px 12px;
     border-radius: 10px;
     transition: all .3s ease-in-out;
@@ -131,20 +131,31 @@ nav {
             width: 22%;
             border: none;
             padding: 10px ;
-            color: #fff;
-            font-size: 18px;
+            color: black;
+            font-size: 25px;
             font-weight: bold;
+            
+            background-color: white;
+            transition: all .3s ease-in-out;
+        }
+        .plus:hover{
             background-color: rgb(9, 206, 9);
+            color: #fff;
         }
         .minus {
             width: 22%;
             border: none;
             padding: 10px ;
-            color: #fff;
-            font-size: 18px;
+            color: black;
+            font-size: 25px;
             font-weight: bold;
-            background-color: rgb(245, 7, 7);
+            background-color: white;
             border-bottom-right-radius: 20px;
+            transition: all .3s ease-in-out;
+        }
+        .minus:hover{
+            background-color: rgb(245, 7, 7);
+            color: #fff;
         }
     }
 
