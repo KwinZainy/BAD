@@ -12,14 +12,11 @@ let words = ["This", "is", "just", "the", "beginning", "of", "learning" ,"js"]
 let lastElement = words.indexOf("of");
 
 
-let new_words = "Blessing is a chicken"
+let new_words = "Ble ssing is a chicken"
 
 // console.log(new_words.split(" "));
 
-let splitted_words = new_words.split(" ")
-
-
-
+let splitted_words = new_words.split(",")
 let name = splitted_words[3]
 
 console.log(name);
