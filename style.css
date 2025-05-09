@@ -53,7 +53,7 @@ nav {
 }
 
 .nav-cart a, .nav-cart-2 a {
-    background-color: tomato;
+    background-color: black;
     padding: 7px 12px;
     border-radius: 10px;
     transition: all .3s ease-in-out;
@@ -111,22 +111,55 @@ nav {
         border-top-right-radius: 20px;
     }
 
-    button {
-        width: 100%;
-        border: none;
-        background-color: tomato;
-        color: #fff;
-        font-size: 16px;
-        padding: 10px 0;
-        font-weight: 600;
-        transition: all .3s ease-in-out;
-        border-bottom-left-radius: 20px;
+    .qBtn {
+
+        display: flex;
+        justify-content: space-between;
+
+        .addBtn {
+            background-color: rgb(0, 0, 0);
+            width: 50%;
+            border: none;
+            padding: 10px ;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom-left-radius: 20px;
+        }
+
+        .plus {
+            width: 22%;
+            border: none;
+            padding: 10px ;
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            
+            background-color: white;
+            transition: all .3s ease-in-out;
+        }
+        .plus:hover{
+            background-color: rgb(9, 206, 9);
+            color: #fff;
+        }
+        .minus {
+            width: 22%;
+            border: none;
+            padding: 10px ;
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: white;
+            border-bottom-right-radius: 20px;
+            transition: all .3s ease-in-out;
+        }
+        .minus:hover{
+            background-color: rgb(245, 7, 7);
+            color: #fff;
+        }
     }
 
-    button:hover {
-        background-color: #fff;
-        color: tomato;
-    }
+
 }
 
 .container {
