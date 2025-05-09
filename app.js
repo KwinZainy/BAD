@@ -59,8 +59,11 @@ function removeFromCart(nameOfItem){
     localStorage.setItem("nameOfCartItems", cartArray)
 }
 
-minus.forEach((element, index)=> {
-    element.addEventListener('click', removeFromCart(nameOfItem))
+minus.forEach((element)=> {
+    element.addEventListener('click', ()=>{
+        const nameOfItem = this.getAttribute("data-item")
+        removeFromCart(nameOfItem)
+    })
     
 })
 
