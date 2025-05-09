@@ -1,6 +1,7 @@
 
 const cartNumber = document.getElementById("cartNumber")
-const add = document.getElementById("plus")
+const add = document.querySelectorAll("plus")
+const minus = document.querySelectorAll("minus")
 
 let cartArray = [];
 
@@ -41,3 +42,6 @@ function removeFromCart(nameOfItem){
 
 
 }
+
+minus.addEventListener("click", removeFromCart)
+add.addEventListener("click", addToCart)
