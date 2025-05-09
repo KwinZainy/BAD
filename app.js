@@ -33,5 +33,5 @@ function addToCart(value){
 
 
 function displayCart(){
-    display.classList.toggle("")
+    display.classList.toggle("cart-display")
 }
