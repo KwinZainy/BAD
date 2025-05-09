@@ -1,9 +1,30 @@
 
 const cartNumber = document.getElementById("cartNumber")
 const add = document.querySelectorAll("plus")
-const minus = document.querySelectorAll("minus")
+const minus = document.querySelectorAll(".minus")
 
 let cartArray = [];
+
+
+
+// let lastElement = words.indexOf("of");
+
+
+// let new_words = "Ble ssing is a chicken"
+
+// // console.log(new_words.split(" "));
+
+// let splitted_words = new_words.split(",")
+// let name = splitted_words[3]
+
+// console.log(name);
+
+
+// console.log(lastElement);
+// console.log(words.splice(lastElement,1,"REACT"))
+// console.log(words);
+
+
 
 
 
@@ -33,15 +54,17 @@ function removeFromCart(nameOfItem){
 
     let itemIndex = cartArray.indexOf(nameOfItem) 
 
-   
     cartArray.splice(itemIndex, 1)
 
-   localStorage.setItem("nameOfCartItems", cartArray)
-
-    
-
-
+    localStorage.setItem("nameOfCartItems", cartArray)
 }
 
-minus.addEventListener("click", removeFromCart)
-add.addEventListener("click", addToCart)
+minus.forEach((element, index)=> {
+    element.addEventListener('click', removeFromCart(nameOfItem))
+    
+})
+
+// minus.addEventListener("click", removeFromCart())
+// add.addEventListener("click", addToCart())
+
+console.log(minus);

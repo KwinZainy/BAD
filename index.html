@@ -34,8 +34,9 @@
             <div id="cartDisplay"></div>
         </div>
         </div>
-        <div class="nav-cart-2">
-            <p>Cart <span>0</span></p>
+        <div class="nav-cart-2" onclick=" displayCart()">
+            <a href="cart.html">Cart <span id="cartNumber2">0</span></a>
+            <div id="cartDisplay"></div>
         </div>
     </div>
     </nav>
@@ -61,8 +62,8 @@
             <img src="./assets/shop-items/assortment-pieces-cake_114579-85732.avif" alt="">
             <div class="qBtn">
             <button id="productOne" class="addBtn" onclick="addToCart('cake platter')">Add to Cart</button>
-            <button id="plus" class="plus">+</button>
-            <button id="minus" class="minus">-</button>
+            <button onclick="addToCart('cake platter')" id="plus" class="plus">+</button>
+            <button onclick="removeFromCart('cake platter')" id="minus" class="minus">-</button>
             </div>
         </div>
         <div class="img-container">
@@ -152,7 +153,7 @@
             <img src="./assets/shop-items/mexican-tacos-with-meat-vegetables-red-onion_2829-8286.avif" alt="">
             <div class="qBtn">
                 <button id="productTwelve" class="addBtn" onclick="addToCart('spicy taco')">Add to Cart</button>
-                <button id="plus" class="plus"></button>button>
+                <button id="plus" class="plus">+</button>
                 <button id="minus" class="minus">-</button>
                 </div>
         </div>
