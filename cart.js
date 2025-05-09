@@ -15,7 +15,7 @@ function displayItems(){
           
           let eachItem = arrayCarts[index];
 
-          display.innerHTML += `<p> ${eachItem}  </p>`  
+          display.innerHTML += `<p> ${eachItem} </p>`  
           
       
     }
@@ -24,8 +24,8 @@ function displayItems(){
     // arrayCarts.forEach((element)=>{
     //   display.innerHTML += `<p> ${element} </p>`
     // })
- 
-}
 
+}
+console.log(cartItemList);
 
 displayItems();
