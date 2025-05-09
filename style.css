@@ -17,7 +17,7 @@ a {
 /* nav bar */
 
 nav {
-    background-color: rgba(24, 24, 24, 0.664);
+    background-color: #103B10;
 }
 
 .navbar {
@@ -52,8 +52,8 @@ nav {
     color: tomato;
 }
 
-.nav-cart p, .nav-cart-2 p {
-    background-color: tomato;
+.nav-cart a, .nav-cart-2 a {
+    background-color: black;
     padding: 7px 12px;
     border-radius: 10px;
     transition: all .3s ease-in-out;
@@ -62,7 +62,7 @@ nav {
     cursor: pointer;
 }
 
-.nav-cart p:hover, .nav-cart-2 p:hover {
+.nav-cart a:hover, .nav-cart-2 a:hover {
     color: tomato;
     background-color: #fff;
 }
@@ -81,8 +81,8 @@ nav {
 /* shop items */
 
 .items-container {
-    background-color: rgba(24, 24, 24, 0.664);
-    display: flex;
+    background-color: #103B10;
+
 }
 
 .items {
@@ -104,35 +104,82 @@ nav {
     height: 210px;
 
 
-
     img {
         width: 100%;
         height: 80%;
         object-fit: cover;
+        border-top-right-radius: 20px;
     }
 
-    button {
-        width: 100%;
-        border: none;
-        background-color: tomato;
-        color: #fff;
-        font-size: 16px;
-        padding: 10px 0;
-        font-weight: 600;
-        transition: all .3s ease-in-out;
+    .qBtn {
+
+        display: flex;
+        justify-content: space-between;
+
+        .addBtn {
+            background-color: rgb(0, 0, 0);
+            width: 50%;
+            border: none;
+            padding: 10px ;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom-left-radius: 20px;
+        }
+
+        .plus {
+            width: 22%;
+            border: none;
+            padding: 10px ;
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            
+            background-color: white;
+            transition: all .3s ease-in-out;
+        }
+        .plus:hover{
+            background-color: rgb(9, 206, 9);
+            color: #fff;
+        }
+        .minus {
+            width: 22%;
+            border: none;
+            padding: 10px ;
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: white;
+            border-bottom-right-radius: 20px;
+            transition: all .3s ease-in-out;
+        }
+        .minus:hover{
+            background-color: rgb(245, 7, 7);
+            color: #fff;
+        }
     }
 
-    button:hover {
-        background-color: #fff;
-        color: tomato;
-    }
+
 }
 
+.container {
+    position: relative;
+    /* background-color: green; */
+}
+
+
 .order-items{
-  
-    border: 2px solid red;
-    width: 300px;
-    height: auto;
+    position: absolute;
+    /* position: sticky; */
+    top: 100px;
+    left: 35%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 10px 10px 10px black;
+    width: 500px;
+    height: 400px;
+    overflow-y: auto;
     display: none;
 }
 
@@ -166,6 +213,7 @@ nav {
     .img-container {
         width: 220px;
         height: 150px;
+        margin-bottom: 40px;
     
         img {
             width: 100%;

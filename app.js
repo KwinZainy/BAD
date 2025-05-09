@@ -1,37 +1,43 @@
 
 const cartNumber = document.getElementById("cartNumber")
-const display = document.getElementById("cartItems")
-
+const add = document.getElementById("plus")
 
 let cartArray = [];
 
 
 
-
-function addToCart(value){
+function addToCart(nameOfItem){
     let counter = cartNumber.innerText
     counter++
-    console.log(counter);
+    
     cartNumber.innerText = counter
-    cartArray.push(value)
-   
-    
-    
-    display.innerText = ""
-    cartArray.forEach((element)=>{
-            
-             display.innerHTML += `<p> ${element} </p>`
-    })
 
-  
-   
+    cartArray.push(nameOfItem)
+    
 
-    console.log(cartArray);
+    localStorage.setItem("nameOfCartItems", cartArray)
+
     
 }
 
 
+function removeFromCart(nameOfItem){
+    let counter = cartNumber.innerText
+    counter--
 
-function displayCart(){
-    display.classList.toggle("cart-display")
+    cartNumber.innerText = counter
+    if (cartNumber.innerText < 0){
+        cartNumber.innerText = 0
+    }
+
+    let itemIndex = cartArray.indexOf(nameOfItem) 
+
+   
+    cartArray.splice(itemIndex, 1)
+
+   localStorage.setItem("nameOfCartItems", cartArray)
+
+    
+
+
 }
