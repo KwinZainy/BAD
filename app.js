@@ -50,6 +50,9 @@ function removeFromCart(nameOfItem){
     cartNumber.innerText = counter
     if (cartNumber.innerText < 0){
         cartNumber.innerText = 0
+        localStorage.removeItem("nameOfCartItems")
+
+
     }
 
     let itemIndex = cartArray.indexOf(nameOfItem) 
@@ -60,7 +63,7 @@ function removeFromCart(nameOfItem){
 }
 
 minus.forEach((element)=> {
-    element.addEventListener('click', ()=>{
+    element.addEventListener('click', function(){
         const nameOfItem = this.getAttribute("data-item")
         removeFromCart(nameOfItem)
     })
