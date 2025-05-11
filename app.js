@@ -151,7 +151,17 @@ let reduceMethod = () => {
 }
 
 
+let filterMethod = () => {
+    let fruits = ["apple", "mango", "cashew", "banana", "pineapple", "watermelon"]
 
+    let newFruits = fruits.filter(function(element){
+        return element.length > 5
+    })
+    
+    
+    console.log(newFruits);
+    
+}
 
 // mapMethod();
 
