@@ -73,4 +73,98 @@ minus.forEach((element)=> {
 // minus.addEventListener("click", removeFromCart())
 // add.addEventListener("click", addToCart())
 
-console.log(minus);
+
+
+// Function Declaration (Named Function)
+
+function doSomething(name){
+      let fruits = ["banana", "apple", "orange", "pineapple"]
+        for(let element of fruits){
+            console.log(element);
+            
+        }
+}
+
+// Arrow Function (ES6)
+const glitch = () =>{
+
+    let names = ["Ahmed", "Glitch", "yinka", "dami", "seun", "Gbenga", "Funmi", "Shade"]
+
+
+    let answer = 0
+
+    while(answer  < names.length){
+        console.log(names[answer]);
+        answer++
+    }
+
+
+    
+    
+}
+
+
+// Function Expression
+const ahmed = function () {
+
+    let names = ["Ahmed", "Glitch", "yinka", "dami", "seun", "Gbenga", "Funmi", "Shade"]
+
+    for (index = 0; index < names.length; index++){
+        console.log(names[index]);
+        
+        
+    }
+
+       
+        
+}
+
+
+// ahmed()
+// ahmed()
+// doSomething()
+
+let mapMethod = () => {
+    let fruits = ["apple", "banana", "peach", "cashew", "Walnut", "pineapple"];
+
+    let newFruits = fruits.map(function(element,index){
+        return "The fruits is " + index +  element
+        
+    })
+
+    console.log(newFruits);
+    
+  
+}
+
+let reduceMethod = () => {
+    let numbers = [1,4,5,6,23,56]
+
+    let total = numbers.reduce(function (tax, currentNumber){
+        return tax + currentNumber
+
+    }, 5)
+
+    console.log(total);
+    
+    
+}
+
+
+let filterMethod = () => {
+    let fruits = ["apple", "mango", "cashew", "banana", "pineapple", "watermelon"]
+
+    let newFruits = fruits.filter(function(element){
+        return element.length > 5
+    })
+    
+    
+    console.log(newFruits);
+    
+}
+
+// mapMethod();
+
+// reduceMethod();
+
+// filterMethod()
