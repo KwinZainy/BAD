@@ -163,8 +163,63 @@ let filterMethod = () => {
     
 }
 
-// mapMethod();
+mapMethod();
 
-// reduceMethod();
+reduceMethod();
 
-// filterMethod()
+filterMethod()
+
+
+
+
+
+
+let person = {
+    name : ["blessing", "glitch", "david"],
+    age : [12,14,18],
+    color : ["red", "black", "chocolate", "pink"],
+    display : function (word){
+        console.log(`i Can Display a word, whis is ${word}`)
+    },
+
+}
+
+
+let people = {
+    ahmed : {
+        id : 1,
+        age : 18,
+        color : "custard bucket",
+        location : "Ikrd"
+    },
+
+    blessing : {
+        id : 2,
+        age: 10,
+        color : {
+            primaryColor :  ["chocolate", "dark skinned", "yellow", "custard bucket"],
+            secondaryColor :  {
+                mixedColor : ["red", "pink", "blue", "bleachColor"],
+                pairColor : ["Brown", "Black"]
+            }
+        },
+        location : "yaba left"
+    }
+}
+
+
+console.log(people.blessing.color.secondaryColor.pairColor[1]);
+
+
+
+document.addEventListener("keydown", function(event){
+    // console.log("This key was pressed " + event.key);
+
+    if(event.key == "Enter"){
+        console.log("Enter Buton was clicked");
+        
+    }
+    
+})
+
+// console.
